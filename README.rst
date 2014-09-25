@@ -17,10 +17,6 @@ Simply import the trace decorator and apply it to any function you want to log.
         pass
 
 
-Now, any call to the my_awesome_function will be logged like this:
+Now, any call to the my_awesome_function will be logged like this::
 
-
-.. code-block:: none
-
-    TRACE: trace_uuid=44f64962-3468-4273-bcd7-1c2067faacdf
-    func_name=my_awesome_function arg1=1 arg2=2
+    TRACE: trace_uuid=44f64962-3468-4273-bcd7-1c2067faacdf func_name=my_awesome_function arg1=1 arg2=2
