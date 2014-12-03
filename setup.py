@@ -18,7 +18,7 @@ setup(
     long_description=long_description,
 
     # The project URL.
-    url='https://github.com/canassa/flask_trace',
+    url='https://github.com/canassa/flask-trace',
 
     # Author details
     author='Cesar Canassa',
