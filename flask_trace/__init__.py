@@ -46,9 +46,11 @@ def trace(f):
             logargs.append(u'{0}="{1}"'.format(k, v))
 
         extra = {
-            'trace_lineno': inspect.getsourcelines(f)[1],
             'trace_pathname': inspect.getfile(f)
         }
+
+        if len(inspect.getsourcelines(f)) > 1:
+            extra.update({'trace_lineno': inspect.getsourcelines(f)[1]})
 
         try:
             from flask import current_app
