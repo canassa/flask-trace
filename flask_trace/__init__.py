@@ -49,8 +49,10 @@ def trace(f):
             'trace_pathname': inspect.getfile(f)
         }
 
-        if len(inspect.getsourcelines(f)) > 1:
+        try:
             extra.update({'trace_lineno': inspect.getsourcelines(f)[1]})
+        except IndexError:
+            pass
 
         try:
             from flask import current_app
