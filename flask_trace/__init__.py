@@ -4,11 +4,10 @@ from __future__ import absolute_import
 from functools import wraps
 import inspect
 import logging
-import repr as reprlib
+import reprlib
 import sys
 import uuid
 
-__version__ = '0.0.3'
 __all__ = ('get_log_id', 'trace', 'Formatter')
 
 

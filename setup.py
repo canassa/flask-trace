@@ -2,8 +2,6 @@ from setuptools import setup
 import codecs
 import os
 
-import flask_trace
-
 here = os.path.abspath(os.path.dirname(__file__))
 
 # Get the long description from the relevant file
@@ -12,7 +10,7 @@ with codecs.open('README.rst', encoding='utf-8') as f:
 
 setup(
     name="flask_trace",
-    version=flask_trace.__version__,
+    version="0.0.4",
 
     description="Log trace decorator function for Flask",
     long_description=long_description,
@@ -43,5 +41,6 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='flask log trace logging',
+    install_requires=['future'],
     packages=['flask_trace'],
 )
