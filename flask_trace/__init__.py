@@ -1,13 +1,18 @@
 # coding: utf-8
-
 from __future__ import absolute_import
+
+try:
+    import reprlib  # Python 3
+except ImportError:
+    import repr as reprlib  # Python2
+
 from functools import wraps
 import inspect
 import logging
-import reprlib
 import sys
 import uuid
 
+__version__ = '0.0.4'
 __all__ = ('get_log_id', 'trace', 'Formatter')
 
 
